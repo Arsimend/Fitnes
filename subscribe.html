@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Subscribe – FitGain</title>
+    <meta
+      name="description"
+      content="Subscribe to your training plan and start your fitness journey."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <div class="brand-row">
+          <label class="burger" for="nav-toggle" aria-label="Open menu">
+            <span class="burger-lines" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </label>
+
+          <a class="logo" href="index.html">
+            <img class="logo-img" src="logo.svg" alt="FitGain logo" />
+          </a>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="training.html">Training</a>
+          <a href="nutrition.html">Nutrition</a>
+          <a href="progress.html">Progress</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Subscribe to Your Training Plan</h1>
+          <p class="muted">
+            Choose your preferred payment option and start training today.
+          </p>
+
+          <form class="subscribe-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="plan">Training Plan</label>
+              <select id="plan" name="plan" required>
+                <option value="">Select a plan</option>
+                <option value="beginner">Beginner (3 workouts/week)</option>
+                <option value="intermediate">Intermediate (4-5 workouts/week)</option>
+                <option value="advanced">Advanced (5-6 workouts/week)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="payment">Payment Option</label>
+              <select id="payment" name="payment" required>
+                <option value="">Select payment option</option>
+                <option value="daily">Daily</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="card">Card Number</label>
+              <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required 
+               maxlength="16"/>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="expiry">Expiry Date</label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required 
+                 maxlength="5"/>
+              </div>
+              <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" name="cvc" placeholder="123" required 
+                maxlength="3"/>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg">Complete Subscription</button>
+              <a href="training.html" class="btn btn-secondary btn-lg">Back to Training</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="successPopup" class="popup-overlay">
+      <div class="popup-content">
+        <div class="popup-icon">✓</div>
+        <h2>Thank You!</h2>
+        <p>Your subscription is complete. Enjoy your training!</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Secure payment. Start your journey today.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelector('.subscribe-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const popup = document.getElementById('successPopup');
+        popup.classList.add('show');
+        
+        setTimeout(function() {
+          popup.classList.remove('show');
+          document.querySelector('.subscribe-form').reset();
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
