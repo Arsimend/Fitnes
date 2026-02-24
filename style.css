@@ -21,7 +21,7 @@ a { color: inherit; }
 .section { padding: 24px 0; }
 .muted { color: #5d8769; }
 
-/* Header */
+/* This the Header part */
 .topbar {
   background: #050c20;
   color: rgb(255, 255, 255);
@@ -60,7 +60,7 @@ a { color: inherit; }
   letter-spacing: 0.4px;
 }
 
-/* Mobile menu (CSS only) */
+/* Here is some Mobile menu  */
 .nav-toggle { position: absolute; left: -9999px; }
 
 .burger {
@@ -97,7 +97,7 @@ a { color: inherit; }
 .nav .active { background: rgba(255, 255, 255, 0.20); }
 .nav-toggle:checked ~ .nav { display: flex; }
 
-/* Hero */
+/* Hero part of the page */
 .hero {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: white;
@@ -167,7 +167,7 @@ a { color: inherit; }
 .btn-primary { background: #0a3abe; color: #052e16; border-color: transparent; }
 .btn-secondary { background: transparent; color: white; }
 
-/* Cards / grids */
+/* Cards and  grids */
 .grid { display: grid; gap: 14px; }
 
 .card {
@@ -192,7 +192,7 @@ a { color: inherit; }
 
 .list { padding-left: 18px; margin: 10px 0 0; }
 
-/* Pricing */
+/* Pricing part */
 .pricing-section {
   margin-top: 24px;
   padding-top: 20px;
@@ -275,13 +275,13 @@ a { color: inherit; }
   font-size: 16px;
 }
 
-/* Table */
+/* Table css part */
 table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #e5e7eb; }
 th, td { padding: 10px; border-bottom: 1px solid #e5e7eb; text-align: left; font-size: 14px; }
 th { background: #f3f4f6; }
 tr:last-child td { border-bottom: 0; }
 
-/* Form */
+/* Form part */
 form { display: grid; gap: 12px; }
 label { font-weight: 700; font-size: 14px; }
 input, textarea, select { width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid #d1d5db; font: inherit; }
@@ -292,7 +292,7 @@ textarea { min-height: 120px; resize: vertical; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .form-actions { display: flex; gap: 12px; margin-top: 20px; }
 
-/* Popup */
+/* Popup code aftr join */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -393,7 +393,7 @@ textarea { min-height: 120px; resize: vertical; }
   font-weight: 600;
 }
 
-/* Feature Cards */
+/* Feature Cards code */
 .feature-card {
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
@@ -479,7 +479,7 @@ textarea { min-height: 120px; resize: vertical; }
   color: #050c20;
 }
 
-/* CTA Section */
+/* CTA Section part */
 .cta-section {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: white;
@@ -505,10 +505,10 @@ textarea { min-height: 120px; resize: vertical; }
 }
 
 /* Grid adjustments */
-/* Footer */
+/* Footer part */
 .footer { padding: 20px 0; color: #6b7280; font-size: 14px; }
 
-/* Bigger screens */
+/* bc i need Bigger screens */
 @media (min-width: 720px) {
   .burger { display: none; }
   .nav { width: auto; display: flex; flex-direction: row; gap: 10px; margin-top: 0; }
@@ -538,7 +538,7 @@ textarea { min-height: 120px; resize: vertical; }
 
 
 .flip-card-container {
-  display: flex;            /* Align cards in a row */
+  display: flex;            /*cards in a row */
   justify-content: space-evenly; /* Space between cards */
   flex-wrap: wrap;          /* Wrap if screen is small */
   gap: 20px;                /* Optional gap between cards */
@@ -549,7 +549,7 @@ textarea { min-height: 120px; resize: vertical; }
   background-color: transparent;
   width: 300px;
   height: 300px;
-  perspective: 1000px; /* 3D effect */
+  perspective: 1000px; /* and some 3D effect */
 }
 
 /* Inner part */
@@ -567,7 +567,7 @@ textarea { min-height: 120px; resize: vertical; }
   transform: rotateY(180deg);
 }
 
-/* Front & back faces */
+/* Front & back faces flips */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
