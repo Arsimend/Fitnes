@@ -171,8 +171,8 @@ a { color: inherit; }
 .grid { display: grid; gap: 14px; }
 
 .card {
-  background: white;
-  border: 1px solid #e5e7eb;
+  background: rgb(255, 255, 255);
+  border: 1px solid #b5b4b4;
   border-radius: 14px;
   padding: 16px;
 }
@@ -578,14 +578,14 @@ textarea { min-height: 120px; resize: vertical; }
 
 /* Front face */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #bbbbbb;
   color: black;
 }
 
 /* Back face */
 .flip-card-back {
-  background-color: #275e5ec1;
-  color: rgb(255, 255, 255);
+  background-color: #c5c5c5;
+  color: rgb(0, 0, 0);
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
