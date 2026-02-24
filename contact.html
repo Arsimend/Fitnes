@@ -92,7 +92,7 @@
           <div class="grid grid-2">
             <article class="card">
               <h2>Message form</h2>
-              <form>
+              <form id="contact-form">
                 <div>
                   <label for="name">Name</label>
                   <input id="name" name="name" type="text" placeholder="Your name" />
@@ -107,7 +107,7 @@
                     placeholder="you@example.com"
                   />
                 </div>
-
+                  
                 <div>
                   <label for="message">Message</label>
                   <textarea
@@ -121,6 +121,10 @@
                   <button class="btn btn-primary" type="submit">Submit</button>
                 </div>
               </form>
+              <div id="thank-you" style="display:none; color: rgb(194, 3, 3); margin-top:10px;">
+                            Thanks for your message!
+               </div>
+
             </article>
 
             <article class="card">
@@ -145,5 +149,24 @@
         <p>Thanks for visiting FitGain.</p>
       </div>
     </footer>
+          <script>
+const form = document.getElementById('contact-form');
+const thankYou = document.getElementById('thank-you');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent actual form submission
+
+  // Show popup
+  thankYou.style.display = 'block';
+
+  // Hide popup after 5 seconds 
+  setTimeout(() => {
+    thankYou.style.display = 'none';
+  }, 3000);
+
+  
+  form.reset();
+});
+</script>
   </body>
 </html>
