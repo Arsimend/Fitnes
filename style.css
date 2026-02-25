@@ -526,6 +526,7 @@ textarea { min-height: 120px; resize: vertical; }
   }
   .grid-2 {
     grid-template-columns: 1fr;
+    
   }
   .cta-content h2 {
     font-size: 28px;
@@ -591,4 +592,18 @@ textarea { min-height: 120px; resize: vertical; }
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.split-section {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .split-section {
+    flex-direction: column;
+  }
 }
