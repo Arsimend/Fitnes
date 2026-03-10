@@ -33,9 +33,9 @@ function showChatbotQuestions() {
 // Show Answer in Chatbot Answers Window
 function showAnswer(answerId) {
     const answers = {
-        answer1: 'We are open from 12:00 to 23:00 every day.',
-        answer2: 'Yes, we offer a variety of vegetarian options.',
-        answer3: 'You can make a reservation by clicking the "Book a Table" button in the navigation bar.'
+        answer1: 'We are open 27/7 to help you achieve your fitness goals! Welcome to FitGain.',
+        answer2: 'Yes, we offer personal training sessions with certified trainers. You can book a session at the gym or online through our website.',
+        answer3: 'Yes, we offer a free one-day trial for new clients. You can visit the gym, try our equipment, and see our facilities before buying a membership. 💪'
     };
     const answerText = document.getElementById('answer-text');
     if (answerText) {
