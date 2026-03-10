@@ -166,7 +166,75 @@
       <div class="container">
         <p> 2026 FitGain. Train smart. Eat well. Stay consistent.</p>
       </div>
+
+      
     </footer>
     
+    <!-- Chatbot Container -->
+    <div id="chatbot-container">
+        <!-- Chatbot Icon -->
+        <div id="chatbot-icon" onclick=" toggleChatbotOptions()">
+            💬 <!-- Emoji as chatbot icon -->
+        </div>
+
+        <!-- Chatbot Options -->
+        <div id="chatbot-options">
+            <button onclick="showStaffChat()">Speak with Staff</button>
+            <button onclick="showChatbotQuestions()">Speak with Chatbot</button>
+            <button onclick="leaveReview()">Leave a Review</button>
+        </div>
+
+        <!-- Chatbot Windows -->
+        <div id="staff-chat" class="chat-window">
+            <h3>Speak with Staff</h3>
+            <form id="staff-form">
+                <input type="text" id="review-name" placeholder="Your Name" required>
+                <input type="email" id="staff-email" placeholder="Your Email" required>
+                <textarea id="staff-message" placeholder="Write your message here..." required></textarea>
+                <button type="button" id="send-message-button">Send</button>
+                <button type="button" onclick="closeAllWindows()">Close</button>
+            </form>
+        </div>
+
+        <div id="chatbot-questions" class="chat-window">
+            <h3>Frequently Asked Questions</h3>
+            <ul>
+                <li><button onclick="showAnswer('answer1')">What are your opening hours?</button></li>
+                <li><button onclick="showAnswer('answer2')">Do you offer vegetarian options?</button></li>
+                <li><button onclick="showAnswer('answer3')">How can I make a reservation?</button></li>
+            </ul>
+            <button onclick="closeAllWindows()">Close</button>
+        </div>
+
+        <div id="chatbot-answers" class="chat-window">
+            <h3>Answer</h3>
+            <p id="answer-text"></p>
+            <button onclick="closeAllWindows()">Close</button>
+        </div>
+
+        <div id="leave-review" class="chat-window">
+            <h3>Leave a Review</h3>
+            <form id="review-form">
+                <input type="text" id="reviewer-name" placeholder="Your Name" required>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" >
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4" >
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3" >
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2" >
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1" >
+                    <label for="star1">★</label>
+                </div>
+                <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+                <button type="button" id="submit-review-button">Submit Review</button>
+                <button type="button" onclick="closeChatWindow()">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
